@@ -17,6 +17,7 @@
         <a href="menu.html" class="active">Menu</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
+        <a href="#cart">Cart</a>
     </nav>
 </header>
 <section class="page-banner">
@@ -587,12 +588,48 @@
 
 </section>
 
+<section class="cart-section" id="cart">
+    <h2>Your Shopping Cart</h2>
+
+    <div id="cart-items">
+        Your cart is currently empty.
+    </div>
+
+    <div class="cart-total">
+        <h3>Total: ₱<span id="cart-total">0.00</span></h3>
+
+        <button id="clear-cart">Clear Cart</button>
+        <button id="checkout-button">Checkout</button>
+    </div>
+
+    <div id="checkout-form" class="checkout-form" style="display:none;">
+        <h2>Customer Checkout</h2>
+
+        <label>Customer Name</label>
+        <input type="text" id="customer-name" placeholder="Enter your name">
+
+        <label>Contact Number</label>
+        <input type="tel" id="customer-phone" placeholder="Enter your contact number">
+
+        <label>Payment Method</label>
+        <select id="payment-method">
+            <option value="Cash">Cash</option>
+            <option value="GCash">GCash</option>
+        </select>
+
+        <h3>Total: ₱<span id="checkout-total">0.00</span></h3>
+
+        <button id="place-order">Place Order</button>
+    </div>
+</section>
+
+
 <footer>
     <p>© 2026 District 9 K-Merch Cafe. All rights reserved.</p>
     <p>Made with love and caffeine.</p>
 </footer>
 
 <script src="script.js"></script>
-
+<script src="cart.js"></script>
 </body>
 </html>
